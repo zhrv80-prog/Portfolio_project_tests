@@ -20,7 +20,7 @@ def user_password():
     return password
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def created_user(api_url, user_password):
     # --- SETUP: create user ---
     email = f"testuser{uuid.uuid4().hex[:8]}@example.com"
