@@ -2,12 +2,12 @@ import allure
 import requests
 
 
-def test_delete_user(user, auth_token, api_url):
+def test_delete_user(user, api_url):
     """Проверяет удаление пользователя."""
-    with allure.step(f"DELETE /users/{user['id']}"):
+    with allure.step("DELETE /users/me"):
         response = requests.delete(
-            f"{api_url}/users/{user['id']}",
-            headers={"Authorization": f"Bearer {auth_token}"}
+            f"{api_url}/users/me",
+            headers={"Authorization": f"Bearer {user['token']}"}
         )
 
     with allure.step("Verify status code is 200"):
@@ -15,7 +15,7 @@ def test_delete_user(user, auth_token, api_url):
 
     with allure.step("Verify user is deleted"):
         check = requests.get(
-            f"{api_url}/users/{user['id']}",
-            headers={"Authorization": f"Bearer {auth_token}"}
+            f"{api_url}/users/me",
+            headers={"Authorization": f"Bearer {user['token']}"}
         )
-        assert check.status_code == 401  # или 404, зависит от API
+        assert check.status_code == 401

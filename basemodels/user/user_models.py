@@ -1,5 +1,6 @@
 from dataclasses import dataclass, asdict
 
+# --- Модель данных ---
 @dataclass
 class User:
     firstName: str

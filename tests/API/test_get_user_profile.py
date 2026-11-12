@@ -2,12 +2,12 @@ import allure
 import requests
 
 
-def test_get_user_info(user, auth_token, api_url):
-    """Get user info"""
-    with allure.step(f"GET /users/me with token"):
+def test_get_user_info(user, api_url):
+    """Проверяет получение информации о пользователе."""
+    with allure.step("GET /users/me"):
         response = requests.get(
             f"{api_url}/users/me",
-            headers={"Authorization": f"Bearer {auth_token}"}
+            headers={"Authorization": f"Bearer {user['token']}"}
         )
 
     with allure.step("Verify status code is 200"):
@@ -15,7 +15,7 @@ def test_get_user_info(user, auth_token, api_url):
 
     with allure.step("Verify user data"):
         body = response.json()
-        assert body["email"] == user["email"]
-        assert body["firstName"] == "Test"
-        assert body["lastName"] == "User"
+        assert body["email"] == user["user"].email
+        assert body["firstName"] == user["user"].firstName
+        assert body["lastName"] == user["user"].lastName
         assert "password" not in body
