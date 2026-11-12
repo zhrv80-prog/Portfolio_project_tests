@@ -22,7 +22,7 @@ def user_password():
 
 
 @pytest.fixture
-def created_user(api_url, user_password):
+def user_lifecycle(api_url, user_password):
     email = f"testuser{uuid.uuid4().hex[:8]}@example.com"
 
     user = User(
