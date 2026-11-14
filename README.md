@@ -29,4 +29,4 @@
 
 ```bash
 git clone https://github.com/zhrv80-prog/PythonProject.git
-cd contact-list-api-tests
+cd tests/API
