@@ -1,31 +1,33 @@
-# Фреймворк для автоматизации тестирования API Contact List App
+# API Testing Framework for Contact List App
 
 [![Python](https://img.shields.io/badge/Python-3.14-blue)](https://www.python.org/)
 [![pytest](https://img.shields.io/badge/pytest-9.1-green)](https://pytest.org/)
 [![Allure](https://img.shields.io/badge/Allure-2.13-orange)](https://allurereport.org/)
 
-## 📖 Документация API
+**English** | [Русский](./README.ru.md)
+
+## 📖 API Documentation
 
 - [Postman Collection — Contact List App](https://documenter.getpostman.com/view/4012288/TzK2bEa8)
 
-## ✅ Список проверок
+## ✅ Test Coverage
 
-- Создание пользователя
-- Получение информации о пользователе
-- Удаление пользователя
+- Create user
+- Get user info
+- Delete user
 
-## 🛠 Стек технологий
+## 🛠 Tech Stack
 
-| Технология | Назначение |
+| Technology | Purpose |
 | :--- | :--- |
-| **Python 3.14** | Язык программирования |
-| **pytest** | Фреймворк для тестирования |
-| **requests** | HTTP-клиент для API-запросов |
-| **Allure** | Генерация отчётов |
+| **Python 3.14** | Programming language |
+| **pytest** | Testing framework |
+| **requests** | HTTP client for API calls |
+| **Allure** | Test reporting |
 
-## 🚀 Установка и запуск
+## 🚀 Installation and Running
 
-### 1. Клонировать репозиторий
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/zhrv80-prog/PythonProject.git
