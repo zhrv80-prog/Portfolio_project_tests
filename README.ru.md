@@ -1,4 +1,4 @@
-# Фреймворк для тестирования API Contact List App
+# Фреймворк для тестирования API Contact List App 
 
 [English](./README.md) | **Русский**
 
@@ -27,7 +27,7 @@
 
 ## 🚀 Установка и запуск
 
-### 1. Клонировать репозиторий
+### 💻 1. Клонировать репозиторий
 
 ```bash
 git clone https://github.com/zhrv80-prog/PythonProject.git
