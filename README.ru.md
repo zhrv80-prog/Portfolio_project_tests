@@ -2,9 +2,6 @@
 
 [English](./README.md) | **Русский**
 
-
-# Фреймворк для автоматизации тестирования API Contact List App
-
 [![Python](https://img.shields.io/badge/Python-3.14-blue)](https://www.python.org/)
 [![pytest](https://img.shields.io/badge/pytest-9.1-green)](https://pytest.org/)
 [![Allure](https://img.shields.io/badge/Allure-2.13-orange)](https://allurereport.org/)
