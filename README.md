@@ -1,10 +1,12 @@
 # API Testing Framework for Contact List App
 
+**English** | [Русский](./README.ru.md)
+
 [![Python](https://img.shields.io/badge/Python-3.14-blue)](https://www.python.org/)
 [![pytest](https://img.shields.io/badge/pytest-9.1-green)](https://pytest.org/)
 [![Allure](https://img.shields.io/badge/Allure-2.13-orange)](https://allurereport.org/)
 
-**English** | [Русский](./README.ru.md)
+
 
 ## 📖 API Documentation
 
